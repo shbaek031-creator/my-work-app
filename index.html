@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>농축수산물 시세 대시보드</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>농축수산물 시세 대시보드</h1>
+    <form class="search" id="search-form">
+      <label for="item-input" class="visually-hidden">품목 검색</label>
+      <input type="search" id="item-input" name="item" placeholder="품목 이름 (예: 배추)" autocomplete="off">
+      <button type="submit" id="load-button">불러오기</button>
+    </form>
+
+    <form class="search live" id="live-form" autocomplete="off">
+      <label for="key-input" class="visually-hidden">공공데이터포털 인증키</label>
+      <input type="password" id="key-input" name="serviceKey" placeholder="공공데이터포털 인증키" autocomplete="off" spellcheck="false">
+      <button type="submit" id="live-button">실제 시세 불러오기</button>
+    </form>
+
+    <div class="filters">
+      <label>
+        부류
+        <select id="category-select">
+          <option value="">전체</option>
+          <option value="채소류">채소류</option>
+          <option value="과일류">과일류</option>
+          <option value="수산물">수산물</option>
+          <option value="식량작물">식량작물</option>
+        </select>
+      </label>
+      <label>
+        구분
+        <select id="se-select">
+          <option value="">전체</option>
+          <option value="소매">소매</option>
+          <option value="중도매">중도매</option>
+        </select>
+      </label>
+      <label>
+        정렬
+        <select id="sort-select">
+          <option value="rise">많이 오른 순</option>
+          <option value="fall">많이 내린 순</option>
+          <option value="name">품목 이름 순</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="basis" role="group" aria-label="비교 기준">
+      <button type="button" data-basis="dd1">1일 전</button>
+      <button type="button" data-basis="ww1" aria-pressed="true">1주일 전</button>
+      <button type="button" data-basis="mm1">1개월 전</button>
+      <button type="button" data-basis="yy1">1년 전</button>
+    </div>
+
+    <section class="cards" aria-label="요약">
+      <div class="card">
+        <p class="card-label">조사일</p>
+        <p class="card-value" id="card-date">-</p>
+      </div>
+      <div class="card">
+        <p class="card-label">표에 보이는 품목</p>
+        <p class="card-value" id="card-count">-</p>
+      </div>
+      <div class="card">
+        <p class="card-label">가장 많이 오른 품목</p>
+        <p class="card-value" id="card-top-up">-</p>
+        <p class="card-sub change-up" id="card-top-up-rate"></p>
+      </div>
+      <div class="card">
+        <p class="card-label">가장 많이 내린 품목</p>
+        <p class="card-value" id="card-top-down">-</p>
+        <p class="card-sub change-down" id="card-top-down-rate"></p>
+      </div>
+    </section>
+
+    <section class="caster" aria-labelledby="caster-title">
+      <div class="caster-head">
+        <h2 id="caster-title">AI 밥상 물가 캐스터</h2>
+        <button type="button" id="caster-button">오늘의 밥상 추천</button>
+      </div>
+      <p class="caster-text muted" id="caster-text" aria-live="polite">버튼을 누르면 표에서 값이 내린 식재료로 오늘 저녁 메뉴를 추천해 드려요.</p>
+      <div class="caster-meta" id="caster-meta" hidden>
+        <ul class="caster-items" id="caster-items"></ul>
+        <p class="caster-note">AI가 만든 제안입니다</p>
+      </div>
+    </section>
+
+    <p class="status" id="status" role="status"></p>
+
+    <div class="table-wrap">
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th scope="col">부류</th>
+            <th scope="col">품목·품종</th>
+            <th scope="col">구분</th>
+            <th scope="col">등급</th>
+            <th scope="col">단위</th>
+            <th scope="col" class="num">조사일 가격</th>
+            <th scope="col" class="num" id="compare-header">1주일 전 가격</th>
+            <th scope="col" class="num">등락</th>
+          </tr>
+        </thead>
+        <tbody id="price-body"></tbody>
+      </table>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

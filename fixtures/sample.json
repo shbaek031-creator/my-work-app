@@ -1,0 +1,163 @@
+{
+  "response": {
+    "header": {
+      "resultCode": "0"
+    },
+    "body": {
+      "items": {
+        "item": [
+          {
+            "exmn_ymd": "20261013",
+            "ctgry_nm": "채소류",
+            "item_nm": "배추",
+            "vrty_nm": "고랭지",
+            "se_nm": "소매",
+            "grd_nm": "상품",
+            "unit_sz": "1",
+            "unit": "포기",
+            "exmn_dd_prc": "4800",
+            "dd1_bfr_prc": "4750",
+            "ww1_bfr_prc": "5100",
+            "mm1_bfr_prc": "6200",
+            "yy1_bfr_prc": "5400"
+          },
+          {
+            "exmn_ymd": "20261013",
+            "ctgry_nm": "채소류",
+            "item_nm": "무",
+            "vrty_nm": "가을",
+            "se_nm": "중도매",
+            "grd_nm": "상품",
+            "unit_sz": "20",
+            "unit": "kg",
+            "exmn_dd_prc": "18500",
+            "dd1_bfr_prc": "18200",
+            "ww1_bfr_prc": "19000",
+            "mm1_bfr_prc": "22400",
+            "yy1_bfr_prc": "17600"
+          },
+          {
+            "exmn_ymd": "20261013",
+            "ctgry_nm": "채소류",
+            "item_nm": "양파",
+            "vrty_nm": "양파",
+            "se_nm": "소매",
+            "grd_nm": "상품",
+            "unit_sz": "1",
+            "unit": "kg",
+            "exmn_dd_prc": "2900",
+            "dd1_bfr_prc": "2900",
+            "ww1_bfr_prc": null,
+            "mm1_bfr_prc": "3100",
+            "yy1_bfr_prc": "2650"
+          },
+          {
+            "exmn_ymd": "20261013",
+            "ctgry_nm": "채소류",
+            "item_nm": "대파",
+            "vrty_nm": "대파",
+            "se_nm": "소매",
+            "grd_nm": "상품",
+            "unit_sz": "1",
+            "unit": "kg",
+            "exmn_dd_prc": "3600",
+            "dd1_bfr_prc": "3650",
+            "ww1_bfr_prc": "3500",
+            "mm1_bfr_prc": "3300",
+            "yy1_bfr_prc": "4100"
+          },
+          {
+            "exmn_ymd": "20261013",
+            "ctgry_nm": "과일류",
+            "item_nm": "사과",
+            "vrty_nm": "후지",
+            "se_nm": "소매",
+            "grd_nm": "상품",
+            "unit_sz": "10",
+            "unit": "개",
+            "exmn_dd_prc": "27800",
+            "dd1_bfr_prc": "27500",
+            "ww1_bfr_prc": "28900",
+            "mm1_bfr_prc": "31200",
+            "yy1_bfr_prc": "25300"
+          },
+          {
+            "exmn_ymd": "20261013",
+            "ctgry_nm": "과일류",
+            "item_nm": "배",
+            "vrty_nm": "신고",
+            "se_nm": "중도매",
+            "grd_nm": "상품",
+            "unit_sz": "15",
+            "unit": "kg",
+            "exmn_dd_prc": "42000",
+            "dd1_bfr_prc": "41500",
+            "ww1_bfr_prc": "43800",
+            "mm1_bfr_prc": "47000",
+            "yy1_bfr_prc": "39500"
+          },
+          {
+            "exmn_ymd": "20261013",
+            "ctgry_nm": "수산물",
+            "item_nm": "고등어",
+            "vrty_nm": "생선",
+            "se_nm": "소매",
+            "grd_nm": "중품",
+            "unit_sz": "1",
+            "unit": "마리",
+            "exmn_dd_prc": "3900",
+            "dd1_bfr_prc": "3900",
+            "ww1_bfr_prc": "3800",
+            "mm1_bfr_prc": "3700",
+            "yy1_bfr_prc": "4200"
+          },
+          {
+            "exmn_ymd": "20261013",
+            "ctgry_nm": "수산물",
+            "item_nm": "오징어",
+            "vrty_nm": "냉동",
+            "se_nm": "소매",
+            "grd_nm": "중품",
+            "unit_sz": "1",
+            "unit": "마리",
+            "exmn_dd_prc": "5200",
+            "dd1_bfr_prc": "5250",
+            "ww1_bfr_prc": "5300",
+            "mm1_bfr_prc": "5100",
+            "yy1_bfr_prc": "4800"
+          },
+          {
+            "exmn_ymd": "20261013",
+            "ctgry_nm": "식량작물",
+            "item_nm": "쌀",
+            "vrty_nm": "일반계",
+            "se_nm": "소매",
+            "grd_nm": "상품",
+            "unit_sz": "20",
+            "unit": "kg",
+            "exmn_dd_prc": "56800",
+            "dd1_bfr_prc": "56800",
+            "ww1_bfr_prc": "56500",
+            "mm1_bfr_prc": "55900",
+            "yy1_bfr_prc": "52300"
+          },
+          {
+            "exmn_ymd": "20261013",
+            "ctgry_nm": "식량작물",
+            "item_nm": "감자",
+            "vrty_nm": "수미",
+            "se_nm": "중도매",
+            "grd_nm": "상품",
+            "unit_sz": "20",
+            "unit": "kg",
+            "exmn_dd_prc": "34000",
+            "dd1_bfr_prc": "33600",
+            "ww1_bfr_prc": "35200",
+            "mm1_bfr_prc": "37800",
+            "yy1_bfr_prc": "31000"
+          }
+        ]
+      }
+    }
+  }
+}

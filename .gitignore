@@ -1,0 +1,6 @@
+# 비밀 값
+.env
+.env.*
+
+# 의존성
+node_modules/
